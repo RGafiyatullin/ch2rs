@@ -22,7 +22,7 @@ const CREATE_TABLE_DDL: &str = "
         i128        Int128,
         bool        Boolean,
         str         String,
-        low_str     LowCardinality(String),
+        low_str     LowCardinality(String) COMMENT 'a multi\n\tline\n\t\tcomment¿\n\n— this is low!!!',
         blob        String,
         fs          FixedString(5),
         f32         Float32,

@@ -45,6 +45,11 @@ pub struct Row<'a> {
     pub i128: i128,
     pub bool: bool,
     pub str: &'a str,
+    /// a multi
+    /// 	line
+    /// 		comment¿
+    /// 
+    /// — this is low!!!
     pub low_str: &'a str,
     #[serde(with = "serde_bytes")]
     pub blob: Vec<u8>,
